@@ -1,0 +1,83 @@
+.home {
+    h1 {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 100px 0;
+    }
+    .links {
+        background: rgba(0,0,0,.5);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        margin-bottom: 70px;
+
+        .categories {
+            .title {
+                color: white;
+                font-weight: 700;
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            .group-links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .link {
+                    color: white;
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                    margin-bottom: .5rem;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .trending {
+        max-width: 800px;
+        margin: 0 auto;
+        .search {
+            width: 100%;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .title {
+            font-weight: 300;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .trending-tags {
+            text-align: center;
+
+            .tag {
+                display: inline-block;
+                color: white;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+                border-radius: 45px;
+                border: 1px solid white;
+
+                &:hover {
+                    background: white;
+                    color: black;
+                }
+                
+            }
+        }
+    }
+}

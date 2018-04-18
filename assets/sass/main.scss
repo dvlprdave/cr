@@ -1,0 +1,67 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "home";
+@import "listings";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(135deg, rgba(10,10,194,.6) 0%, rgba(169,39,230,.6) 100%), 
+  url("https://cdn.vox-cdn.com/thumbor/ZnP9cnjIn60slvybF_34lby1uMk=/0x0:2000x1125/1200x675/filters:focal(840x403:1160x723)/cdn.vox-cdn.com/uploads/chorus_image/image/58203557/171109_06_49_10_5DSR4201.0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  // background: rgb(15, 113, 131);
+}
+
+
+header {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  .fas {
+    margin-left: 10px;
+  }
+
+  .left-menu {
+    display: flex;
+    align-items: center;
+
+      .logo {
+        font-size: 2rem;
+        padding-right: 15px;
+      }
+  }
+
+  .right-menu {
+    display: flex;
+    align-items: center;
+
+      .post-btn {
+        font-weight: 300;
+        text-transform: capitalize;
+        padding: 15px 20px;
+        background: rgb(119, 196, 255);
+      }
+
+      .user-dropdown {
+        padding: 15px 20px;
+      }
+  }
+}
+
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  
+}

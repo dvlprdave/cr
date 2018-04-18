@@ -1,0 +1,63 @@
+.listings-page {
+    background: white;
+
+    #filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1.4rem 0;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            label {
+                font-size: 0.8rem;
+                font-weight: 500;
+                margin-bottom: .5rem;
+            }
+
+            select {
+                background: white;
+                color: #1b1b1b;
+                min-width: 100px;
+                padding: 4px;
+                font-size: 1rem;
+                border-radius: 5px;
+                border: 2px solid #ADBED2;
+                margin-right: 20px;
+            }
+
+                &.button {
+                   flex-direction: row; 
+                   align-items: flex-end;
+                }
+
+            .primary-btn {
+                color: white;
+                padding: 10px 20px;
+                background: #2A7DDD
+            }
+
+            .reset-btn {
+                background: #F7F8FA;
+            }
+
+            .primary-btn,
+            .reset-btn {
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+        }
+        
+    }
+
+    #list-view {
+        section {
+
+        }
+    }
+}
